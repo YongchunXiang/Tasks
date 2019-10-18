@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单标记综合示例</title>
+	</head>
+	<body>
+		<h1>用户调查</h1>
+		<form action=" "  method="get" enctype="multipart/form-data">
+			姓名：<input type="text" name="xm"/><br />
+			网址：<input type="text" name="wz" value="http://"/><br />
+			密码：<input type="password" name="mm" /><br>
+			确认密码：<input type="password" name="qrmm" /><br>
+			请上传你的照片：<input type="file" name="photo" /><br />
+			请选择你喜欢的音乐：<input type="checkbox" value="1" name="music1" checked="checked" />摇滚乐
+			                  <input type="checkbox" value="2" name="music2" />爵士
+							  <input type="checkbox" value="3" name="music3" />流行乐<br>
+			请选择你居住的城市：<input type="radio" value="a" name="city" checked="checked"/>北京
+			                  <input type="radio" value="b" name="city" />上海
+							  <input type="radio" value="c" name="city" />广州<br />
+			请选择你喜欢的网站：<select name="website" size="3" multiple="multiple">
+				                           <option value ="1" >新浪</option>
+				                           <option value="2">雅虎</option>
+				                           <option value="3">搜狐</option>
+				                           <option value="4">google</option>
+			                  </select> <br />
+							  <br>
+			请选择你喜欢的水果：<select name="fruit">
+				<option value ="a" selected="selected">apple</option>
+				<option value ="b">banana</option>
+				<option value ="o">orange</option>
+			</select><br>
+			<br>
+			请留言：<textarea rows="10" cols="120"></textarea><br />
+<br />			
+			<input type="submit" value="提交" name="input"/>
+			<input type="reset" name="rs" value="重置"/>
+		</form>
+	</body>
+</html>
